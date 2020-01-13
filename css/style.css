@@ -1539,7 +1539,7 @@ section.header{
 }
 
 .benefits-wrapper {
-    background: url(/img/54-547697_abstract-minimal-blur-5k-jj-hd-wallpaper-abstract.jpg) 50% 50% no-repeat;
+    background: url(img/54-547697_abstract-minimal-blur-5k-jj-hd-wallpaper-abstract.jpg) 50% 50% no-repeat;
     background-size: cover
 }
 
@@ -1885,7 +1885,7 @@ section.header{
 }
 
 .reasons-wrapper {
-    background: url(/img/warranty.jpg) 50% 50% no-repeat;
+    background: url(img/warranty.jpg) 50% 50% no-repeat;
     background-size: cover;
     padding: 30px 0 20px;
 }
