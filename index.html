@@ -9,9 +9,13 @@
 <link rel="stylesheet" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="icon" href="/img/watch-icon.png">
 
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -207,7 +211,8 @@
 <div class="video container">
   <h1 class="heading heading--primary">Видео обзор</h1>
   <div class="video-overview">
-    <iframe src="https://www.youtube.com/embed/ZLa7elVyTvc" allowfullscreen="" width="1780" height="720" frameborder="0"></iframe>
+   <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLa7elVyTvc" idth="1780" height="720" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!-- <iframe src="https://www.youtube.com/embed/ZLa7elVyTvc" allowfullscreen="" width="1780" height="720" frameborder="0"></iframe> -->
   </div>
 </div>
 </section>
@@ -277,7 +282,7 @@
       <p id="warranty-text">Мы всегда проверяем товар перед отправкой. Все часы имеют новый элемент питания и долгий запас хода. Все часы закупаются только у проверенных поставщиков которые так же следят за качеством.</p>
     </div>		<div class="warranty-item">
       <img src="img/icon-money.png" alt="">
-      <h3>Возврат денег</h3>
+      <h3>Покупатель всегда прав</h3>
       <p id="warranty-text">Наша компания соблюдает не только закон Украина по защите прав потребителей, но и человеческие отношения. При возникновении споров и претензий со стороны покупателя, наша компания решит проблему в самые кратчайшие сроки.</p>
     </div>		<div class="warranty-item">
       <img src="img/icon-delivery.png" alt="">
@@ -311,7 +316,7 @@
 <div class="clear"></div>
 <section id="scroll-reasons" class="reasons-wrapper">
 <div class="6reasons container">
-  <h1 class="heading heading--primary heading--white">ЗАКАЗЫВАЙТЕ ПРЯМО СЕЙЧАС</h1>
+  <h1 class="heading heading--primary heading--white heading-shadow">ЗАКАЗЫВАЙТЕ ПРЯМО СЕЙЧАС</h1>
     <div class="container clearfix con-flex" style="text-align: center;">
 
          <div class="inline-b">
@@ -327,7 +332,7 @@
         <div class="inline-b">
          <div class="rew-item">
             <h3>БЫСТРАЯ ДОСТАВКА</h3>
-            <p>От 1 до 12 дней.</p>
+            <p>От 1 до 12 дней на отделение Новой Почты.</p>
         </div>			<div class="rew-item">
             <h3>ГАРАНТИЯ</h3>
             <p>Гарантия 1 год. Вы вправе вернуть товар в течение двух недель со дня заказа.</p>
@@ -390,49 +395,42 @@
  </div>
 </div>
 </section> -->
-<!-- <div class="clear"></div> -->
-<!-- <section id="scroll-reviews" class="reviews-wrapper">
+
+<div class="clear"></div>
+<section id="scroll-reviews" class="reviews-wrapper">
 <div class="reviews container">
   <div class="reviews__slider col-6">
      <div class="heading__icon heading__icon--reviews"></div>
-     <h1 class="heading heading--white heading--primary heading--sm">ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h1>
-     <div class="slider-reviews owl-carousel owl-loaded owl-drag">                              
-
-     <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-940px, 0px, 0px); transition: all 0s ease 0s; width: 3290px;"><div class="owl-item cloned" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="img/user1.png"></div>
-           <div class="review__name">Игорь Кузьмин</div>
-           <div class="review__text">Делюсь своим мнением о приобретении смарт-часов GT08. Часы очень классные и стильные, с сенсорным дисплеем. При покупки я был очень впечатлен дизайном, отлично смотрятся на руке, даже со строгим стилем одежды. Часы совместимы с андроид и ios, у меня андроид(пока вроде ничего не лагает).</div>
-        </div></div><div class="owl-item cloned" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user2.png"></div>
-           <div class="review__name">Оксана Климова</div>
-           <div class="review__text">Отличные часы за свою суму, практически не снимаю с руки, в этих часах очень много плюсов так как за такую суму мы получаем много интересных функций. Можно вставить свою сим карту и карту памяти это очень хорошо, ребята мой совет покупайте и не пожалеете!</div>
-        </div></div><div class="owl-item active" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user.png"></div>
-           <div class="review__name">Вячеслав Егоров</div>
-           <div class="review__text">Душа просила новый гаджет. В итоге купил эти умные часы. Как часы к ним нареканий нет ни каких. Так же они замечательно работают как мобильный телефон, по ним можно говорить и нормально звонить используя Bluetooth или сим карту в часах.</div>
-        </div></div><div class="owl-item" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user1.png"></div>
-           <div class="review__name">Игорь Кузьмин</div>
-           <div class="review__text">Делюсь своим мнением о приобретении смарт-часов GT08. Часы очень классные и стильные, с сенсорным дисплеем. При покупки я был очень впечатлен дизайном, отлично смотрятся на руке, даже со строгим стилем одежды. Часы совместимы с андроид и ios, у меня андроид(пока вроде ничего не лагает).</div>
-        </div></div><div class="owl-item" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user2.png"></div>
-           <div class="review__name">Оксана Климова</div>
-           <div class="review__text">Отличные часы за свою суму, практически не снимаю с руки, в этих часах очень много плюсов так как за такую суму мы получаем много интересных функций. Можно вставить свою сим карту и карту памяти это очень хорошо, ребята мой совет покупайте и не пожалеете!</div>
-        </div></div><div class="owl-item cloned" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user.png"></div>
-           <div class="review__name">Вячеслав Егоров</div>
-           <div class="review__text">Душа просила новый гаджет. В итоге купил эти умные часы. Как часы к ним нареканий нет ни каких. Так же они замечательно работают как мобильный телефон, по ним можно говорить и нормально звонить используя Bluetooth или сим карту в часах.</div>
-        </div></div><div class="owl-item cloned" style="width: 460px; margin-right: 10px;"><div class="review">
-           <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user1.png"></div>
-           <div class="review__name">Игорь Кузьмин</div>
-           <div class="review__text">Делюсь своим мнением о приобретении смарт-часов GT08. Часы очень классные и стильные, с сенсорным дисплеем. При покупки я был очень впечатлен дизайном, отлично смотрятся на руке, даже со строгим стилем одежды. Часы совместимы с андроид и ios, у меня андроид(пока вроде ничего не лагает).</div>
-        </div></div></div></div><div class="reviews-slider__arrows"><div class="arrow--left-w">prev</div><div class="arrow--right-w">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+     <h1 class="heading heading--primary heading--sm">ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h1>
+     <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user1.png"></div>
+            <div class="review__name">Игорь Кузьмин</div>
+            <div class="review__text">Делюсь своим мнением о приобретении смарт-часов GT08. Часы очень классные и стильные, с сенсорным дисплеем. При покупки я был очень впечатлен дизайном, отлично смотрятся на руке, даже со строгим стилем одежды. Часы совместимы с андроид и ios, у меня андроид(пока вроде ничего не лагает).</div>
+          </div>
+          <div class="swiper-slide">
+             <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user2.png"></div>
+            <div class="review__name">Оксана Климова</div>
+            <div class="review__text">Отличные часы за свою суму, практически не снимаю с руки, в этих часах очень много плюсов так как за такую суму мы получаем много интересных функций. Можно вставить свою сим карту и карту памяти это очень хорошо, ребята мой совет покупайте и не пожалеете!</div>
+         </div>
+          <div class="swiper-slide">
+            <div class="review__photo"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/user.png"></div>
+            <div class="review__name">Вячеслав Егоров</div>
+            <div class="review__text">Душа просила новый гаджет. В итоге купил эти умные часы. Как часы к ним нареканий нет ни каких. Так же они замечательно работают как мобильный телефон, по ним можно говорить и нормально звонить используя Bluetooth или сим карту в часах.</div>
+          </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+   
+   </div>
   </div>
   <div class="reviews__photo col-6 hide-s"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/GT08-08.png"></div>
 </div>
-</section> -->
+</section>
+<!---
 <div class="clear"></div>
-<!-- <section id="scroll-buy" class="buy container">
+ <section id="scroll-buy" class="buy container">
 <h2 class="heading__headline">Умные часы</h2>
 <h1 class="heading heading--secondary heading--has-headline heading--extra">Smart Watch GT08</h1>
 <div class="buy__photo col-6"><img alt="Smart Watch GT08" title="Smart Watch GT08" src="http://017.baza-lp.ru/smart-gt08-/img/GT08-07.jpg"></div>
@@ -461,6 +459,7 @@
   </form>
 
 </div>
+
 </section> -->
 <div class="clear"></div>
 <section class="footer-wrapper">
@@ -491,10 +490,6 @@
           <p>Мы получили Ваш заказ!</p>
           <p>Наш менеджер свяжется с Вами для уточнение деталей заказа</p>
       </div>
-
-      <div class="col-12">
-          <button id="thanks" class="button">Нет, спасибо!</button>
-      </div>
       <div class="clear"></div>
     </div>
   </div>
@@ -523,25 +518,25 @@
 </div>
 </div>
 
-<!-- Policy Modal  -->
-<div class="modal fade" id="policy" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-  <div class="modal-header-policy">
-    <div class="close-recall" data-dismiss="modal"><span></span><span></span></div>
-    <h4 class="modal-title">Политики конфиденциальности</h4>
-  </div>
-  <div class="modal-body">
-    <div class="policy-body">
-      <p></p>
-      <p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надёжно сохраняются и защищены от передачи.
-      Cогласием на обработку данных клиента, исключительно с целью оказания услуг, является размещение заказа на сайте.<br>
-        <br>К персональным данным относится личная информация о клиенте: домашний адрес; имя, фамилия, отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и прочие сведения, которые перечислены в Законе РФ № 152-ФЗ «О персональных данных» от 27 июля 2006 г.<br>
-        <br>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трёхдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом.</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+
+
+  
+  window.onload = function () {
+   var mySwiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
+  },
+
+});
+  }
+
+</script>
 </body></html>

@@ -1797,10 +1797,9 @@ section.header{
 }
 
 .reviews-wrapper {
-    background: url("../img/bg-reviews.jpg") 50% 50% no-repeat;
+/*     background: url("http://017.baza-lp.ru/smart-gt08-/img/bg-reviews.jpg") 50% 50% no-repeat; */
     background-size: cover;
     height: 745px;
-    margin: 100px 0;
 }
 
 .reviews__photo {
@@ -1836,7 +1835,7 @@ section.header{
 }
 
 .review__text {
-    color: #fff;
+    color: #39434d;
     text-align: justify;
     width: 360px;
     margin: 0 auto
@@ -2924,11 +2923,17 @@ flex-direction: column;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 629px){
-    .inline-b {
+@media screen and (max-width: 635px){
+    .container .inline-b {
         display: block;
     }
+
+    #scroll-reviews .swiper-button-next,
+    #scroll-reviews .swiper-button-prev{
+        top: 45%;
+    }
 }
+
 @media screen and (max-width: 959px){
     .menu__list{
         display: none;
