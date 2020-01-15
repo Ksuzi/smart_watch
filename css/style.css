@@ -2940,6 +2940,7 @@ section.colors{
 
 .color__photo{
     text-align: center;
+    padding: 0 10px;
 }
 
 .color__photo > img{
@@ -2950,6 +2951,10 @@ section.colors{
 @media screen and (max-width: 830px){
     .colors-images{
         flex-direction: column;
+    }
+
+    .color__photo{
+        padding: 10px;
     }
 }
 
