@@ -2923,6 +2923,36 @@ flex-direction: column;
     margin: 0 auto;
 }
 
+section.colors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colors-text{
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.colors-images{
+    display: flex;
+}
+
+.color__photo{
+    text-align: center;
+}
+
+.color__photo > img{
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 830px){
+    .colors-images{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 635px){
     .container .inline-b {
         display: block;
