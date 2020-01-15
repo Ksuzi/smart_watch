@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <div class="alert alert-danger" style="display: none;" role="alert"></div>
+    <div class="alert alert-success" style="display: none;" role="alert"></div>
+    <form id="feedback_form" action="feedback_post.php" method="POST">
+        <div class="form-group">
+            <label for="form_fio">ФИО</label>
+            <input type="text" class="form-control" id="form_fio" name="form_fio" required placeholder="ФИО">
+        </div>
+        <div class="form-group">
+            <label for="form_city">Город</label>
+            <input type="text" class="form-control" id="form_city" name="form_city" required placeholder="Город">
+        </div>
+        <div class="form-group">
+            <label for="form_phone">Телефон</label>
+            <input type="text" class="form-control" id="form_phone" name="form_phone" required placeholder="Телефон">
+        </div>
+        <div class="form-group">
+            <label for="form_email">Email</label>
+            <input type="email" class="form-control" id="form_email" name="form_email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="form_address">Точный адрес</label>
+            <input type="text" class="form-control" id="form_address" name="form_address" placeholder="Точный адрес">
+        </div>
+        <button type="button" class="btn btn-primary" id="feedback_button">Заказать</button>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    function feedback_post(){
+        var feedback_form = $('#feedback_form').serialize();
+        $('.alert-danger').hide();
+        $.ajax({
+            url: "feedback_post.php",
+            cache: false,
+            data: feedback_form,
+            type: 'POST',
+            dataType: 'json'
+        })
+        .done(function( text ) {
+            if(text.error) {
+                $('.alert-danger').html(text.error);
+                $('.alert-danger').show();
+            }else if (text.msg){
+                $('.alert-success').html(text.msg);
+                $('.alert-success').show();
+                $('#feedback_form').hide();
+            }
+        });
+    }
+    $('#feedback_button').click(function(){
+        $('#feedback_form').submit();
+    });
+    $('#feedback_form').on('submit', function(e){
+        e.preventDefault();
+        feedback_post();
+    });
+</script>
+</body>
+</html>
