@@ -76,3 +76,42 @@ $('a[href*="#"]')
       if(theEvent.preventDefault) theEvent.preventDefault();
     }
   }
+
+  function feedback_post(){
+    const feedback_form = $('#order-form').serialize();
+    $.ajax({
+        url: "send.php",
+        cache: false,
+        data: feedback_form,
+        type: 'POST',
+        dataType: 'json'
+    })
+    .done(function( text ) {
+      const popupcontainer = document.querySelector('.overlay');
+        if(text.error) {
+          popupcontainer.querySelector('h2').innerText = 'Ошибка!'
+          popupcontainer.querySelector('.content').innerText = text.error;
+          popupcontainer.classList.add('visible');
+        }else if (text.msg){
+          popupcontainer.querySelector('h2').innerText = 'Заказ отправлен!'
+          popupcontainer.querySelector('.content').innerText = text.msg
+          popupcontainer.classList.add('visible');
+
+          console.log(text.msg)
+          let inputs = document.querySelectorAll('#order-form input');
+          inputs.forEach(input => input.value = '');
+        }
+    });
+  }
+
+
+$('#orderform-btn').on('click', function(e){
+    feedback_post();
+});
+
+$('#close-popup').on('click', function(){
+  const popupcontainer = document.querySelector('.overlay');
+  popupcontainer.querySelector('h2').innerText = ''
+  popupcontainer.querySelector('.content').innerText = ''
+  popupcontainer.classList.remove('visible');
+});

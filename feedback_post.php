@@ -8,7 +8,7 @@ $form_address = $_POST['form_address'];
 
 $to      = 'nobody@example.com';
 $subject = 'Заказ с сайта';
-$message = 'Заказ с сайта. Данные:
+$message = 'Заказ с сайта.
 ФИО: '.$form_fio.'
 Город: '.$form_city.'
 Телефон: '.$form_phone.'
