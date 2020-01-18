@@ -3030,6 +3030,17 @@ section.colors{
   }
 
 
+  span.input-container{
+    position: relative;
+    display: inline-block;
+  }
+
+  .asterics{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #f52525;
+  }
   
   .popup {
     margin: 70px auto;

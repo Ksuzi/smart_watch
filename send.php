@@ -25,12 +25,19 @@ $headers = 'From: admin@l59045.hostua02.fornex.org' . "\r\n" .
 $error = 0;
 
 if(!$form_fio || !$form_count || !$form_city || !$form_phone){
-    $error = 'Заполните Ваши ФИО, город, количество и номер телефона';
+    $error = 'Заполните Ваши ФИО, город доставки, количество единиц товара и номер телефона.';
 }
 
 if(!$error){
     mail($to, $subject, $message, $headers);
-    $msg = 'Спасибо за заказ. Наш менеджер свяжется с вами в ближайшее время.';
+    $msg = 'Спасибо за заказ. Наш менеджер свяжется с вами в ближайшее время.
+    Данные вашего заказа:
+    ФИО: '.$form_fio.'
+    Город: '.$form_city.'
+    Адрес: '.$form_address.'
+    Количество: '.$form_count.'
+    Телефон: '.$form_phone.'
+    Email: '.$form_email;
 }
 
 $array = array('error'=>$error,'msg'=>$msg);

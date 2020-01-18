@@ -420,15 +420,27 @@
   </div>
 
   <form method="POST" action="send.php" id="order-form" class="form__inputs orderformcdn">
-    <input type="text" name="name-f" id="name-f" placeholder="Введите Ваше ФИО" class="form__input" required="">
-    <input type="text" name="city-f" id="city-f" placeholder="Введите город доставки" class="form__input" required="">
+    <span class='input-container'>
+      <input type="text" name="name-f" id="name-f" placeholder="Введите Ваше ФИО" class="form__input">
+      <div class="asterics">*</div>
+    </span>
+    <span class='input-container'>
+      <input type="text" name="city-f" id="city-f" placeholder="Введите город доставки" class="form__input">
+      <div class="asterics">*</div>
+    </span>
     <input type="text" name="address-f" id="address-f" placeholder="Введите точный адрес доставки" class="form__input">
-    <input type="text" name="count-f" id="count-f" onkeypress="validate(event)" placeholder="Количество часов" class="form__input" required="">
-    <input type="text" name="phone-f" id="phone-f" placeholder="Введите Ваш телефон" class="form__input" required="">
+    <span class='input-container'>
+      <input type="text" name="count-f" id="count-f" onkeypress="validate(event)" placeholder="Количество часов" class="form__input">
+      <div class="asterics">*</div>
+    </span>
+    <span class='input-container'>
+      <input type="text" name="phone-f" id="phone-f" placeholder="Введите Ваш телефон" class="form__input">
+      <div class="asterics">*</div>
+    </span>
     <input type="email" name="email-f" id="email-f" placeholder="Введите Ваш email" class="form__input">
 
     <div class="form__submit-wrapper">
-      <button id="orderform-btn" type="button" name="submit" class="button form__submit">Оформить заказ</button>
+      <button id="orderform-btn" type="submit" name="submit" class="button form__submit">Оформить заказ</button>
     </div>
   </form>
 

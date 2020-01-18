@@ -97,7 +97,6 @@ $('a[href*="#"]')
           popupcontainer.querySelector('.content').innerText = text.msg
           popupcontainer.classList.add('visible');
 
-          console.log(text.msg)
           let inputs = document.querySelectorAll('#order-form input');
           inputs.forEach(input => input.value = '');
         }
@@ -106,7 +105,8 @@ $('a[href*="#"]')
 
 
 $('#orderform-btn').on('click', function(e){
-    feedback_post();
+  e.preventDefault();
+  feedback_post();
 });
 
 $('#close-popup').on('click', function(){
